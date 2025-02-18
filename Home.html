@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body >
+  <div class="fixed w-screen z-50 transition-all duration-300" id="navbar">
+    <div class="flex justify-center items-center">
+    <div class=" container mx-auto max-w-screen-2xl navbar flex justify-between items-center lg:p-4 bg-white shadow-md min-w-[310px] ">
+      <div class="left flex items-center space-x-6 min-[300px]:flex-col lg:flex-row  min-[300px]:grow lg:grow-0">
+        <a href="/Home.html" class="mb-2"><img src="./public/miro.png" class="w-28 h-12 hover:scale-110 transition-all duration-150" alt=""></a>
+        <nav class="flex space-x-4 ">
+          <div class="feature group relative">
+            <input type="radio" id="product" name="feature" class="dropdown hidden peer">
+          
+            <button class="flex items-center space-x-1 font-medium peer-checked:border font-thin peer-checked:border-b-0  peer-checked:font-semibold  peer-checked:shadow-inner peer-checked:scale-110 peer-checked:shadow-gray-400 border-b-0 ">
+              <label for="product" class="flex items-center justify-center">
+                <span class="text1  text-gray-600 ">Product</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 lg:w-4 lg:h-4" fill="currentColor" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                </svg>
+              </label>
+            </button>
+          
+            <div class="section flex flex-col absolute border-2 bg-white    
+          transition-all duration-300 ease-in-out origin-top  
+          opacity-0 scale-95 h-0 overflow-hidden pointer-events-none  
+          peer-checked:opacity-100 peer-checked:scale-100  
+          peer-checked:h-auto peer-checked:translate-y-0 peer-checked:pointer-events-auto -left-1 border-t-0 ">
+<a href="#" class="flex items-center hover:bg-sky-100 hover:scale-110 hover:text-blue-500 font-normal  z-10   p-2 text1">Product</a>
+<a href="#" class="flex items-center hover:bg-sky-100 hover:scale-110 hover:text-blue-500 font-normal  z-10   p-2 text1">Product</a>
+
+</div>
+          </div>
+          
+          
+        
+            <div class="feature group relative">
+                  <input type="radio" name="feature" id="resource" class="dropdown peer hidden">
+
+                <button class="flex items-center space-x-1 font-medium peer-checked:border font-thin peer-checked:border-b-0  peer-checked:font-semibold  peer-checked:shadow-inner peer-checked:scale-110 peer-checked:shadow-gray-400 border-b-0">
+                  <label for="resource" class="flex items-center justify-center">
+                    <span class=" text1  text-gray-600">Resource</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 lg:w-4 lg:h-4" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                    </svg>
+                  </label>
+                </button>
+                <div class="section flex flex-col absolute border-2 bg-white   
+                transition-all duration-300 ease-in-out origin-top  
+                opacity-0 scale-95 h-0 overflow-hidden pointer-events-none  
+                peer-checked:opacity-100 peer-checked:scale-100  
+                peer-checked:h-auto peer-checked:translate-y-0 peer-checked:pointer-events-auto -left-1 border-t-0">
+                  <a href="#resource1" class="flex items-center hover:bg-sky-100 hover:scale-110 hover:text-blue-500 font-normal  z-10  space-x-2 p-2 text1">Resource</a>
+                  <a href="#resource2" class="flex items-center hover:bg-sky-100 hover:scale-110 hover:text-blue-500 font-normal  z-10  space-x-2 p-2 text1">Resource</a>
+                  
+              </div>
+
+            </div>
+            <div class="feature group relative ">
+              <input type="radio" class="dropdown hidden peer" name="feature" id="solution">
+             
+
+                <button class="flex items-center space-x-1 font-medium peer-checked:border font-thin peer-checked:border-b-0  peer-checked:font-semibold  peer-checked:shadow-inner peer-checked:scale-110 peer-checked:shadow-gray-400">
+                  <label for="solution" class="flex items-center justify-center ">
+
+                    <span class="text1  text-gray-600">Solution</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 lg:w-4 lg:h-4" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                    </svg>
+                </button>
+                <div class="section flex flex-col absolute border-2 bg-white     
+                transition-all duration-300 ease-in-out origin-top  
+                opacity-0 scale-95 h-0 overflow-hidden pointer-events-none  
+                peer-checked:opacity-100 peer-checked:scale-100  
+                peer-checked:h-auto peer-checked:translate-y-0 peer-checked:pointer-events-auto -left-1 border-t-0">
+                  <a href="#solution1" class="flex items-center hover:bg-sky-100 hover:scale-110 hover:text-blue-500 font-normal  z-10  space-x-2 p-2 text1">Item1 </a>
+                  <a href="#solution2" class="flex items-center hover:bg-sky-100 hover:scale-110 hover:text-blue-500 font-normal  z-10  space-x-2 p-2  text1">Item2</a>
+               
+              </div>
+
+            </div>
+            <div class="feature flex items-start">
+                <a href="#enterprise" class="text1 font-thin text-gray-600 ">Enterprises</a>
+            </div>
+            <div class="feature flex items-start">
+                <a href="#pricing" class="text1 font-thin text-gray-600 ">Pricing</a>
+            </div>
+        </nav>
+    </div>
+        <div class="right flex items-center space-x-4 relative  group  ">
+            <input type="checkbox" id="menu-toggle" class="peer hidden">
+
+            <!-- Label acts as button to toggle the menu -->
+            <label for="menu-toggle" class="threedotts cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-three-dots-vertical lg:hidden z-1" viewBox="0 0 16 16">
+                    <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                </svg>
+            </label>
+            <div class="register lg:border-none lg:flex lg:static lg:flex-row space-x-4 lg:justify-center lg:items-center min-[300px]:flex-col min-[300px]:absolute  min-[300px]:top-[227%] min-[300px]:z-[51] min-[300px]:w-[28vw] lg:w-auto min-[300px]:right-0 min-[300px]:bg-white min-[300px]:hidden peer-checked:flex min-[300px]:items-start min-[300px]:border min-[300px]:drop-shadow-lg lg:drop-shadow-none lg:border-0 min-[300px]:space-y-2 lg:space-y-0 smooth-drop lg:animate-none lg:pointer-events-auto pointer-events-none peer-checked:pointer-events-auto">
+            <button class="text1 font-thin text-gray-600 text-gray-600 hover:text-blue-500 text-left min-[300px]:drop-shadow-lg lg:border-none min-[300px]:border-b w-full lg:w-auto min-[300px]:inset-shadow-sm lg:shadow-none hover:scale-110 transition-transform linear duration-150 lg:hover:underline underline-offset-4 lg:flex hidden space-x-1 ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
+                </svg>
+                <span class="text1 font-thin text-gray-600 hover:text-blue-500">EN</span>
+            </button>
+            <a href="/Contact.html" class="text1 font-thin text-gray-600 text-gray-600 hover:text-blue-500 text-left min-[300px]:drop-shadow-lg lg:border-none min-[300px]:border-b w-full lg:w-auto min-[300px]:inset-shadow-sm lg:shadow-none hover:scale-110 transition-transform linear duration-150 lg:hover:underline underline-offset-4">Contact Sales</a>
+            <a href="/Login.html" class=" text1 font-thin text-gray-600 text-gray-600 hover:text-blue-500 text-left min-[300px]:drop-shadow-lg lg:border-none min-[300px]:border-b w-full lg:w-auto min-[300px]:inset-shadow-sm lg:shadow-none hover:scale-110 transition-transform linear duration-150 hover:underline underline-offset-4">Login</a>
+            <button class="item bg-[#4262FF] text-white px-4 py-2 max-h-[6vh] rounded-full hover:bg-blue-600 lg:block truncate text1 font-thin lg:border-none min-[300px]:border-b lg:w-auto min-[300px]:inset-shadow-sm  hover:scale-110 transition-all duration-150 focus:shadow-inner shadow-black">Sign Up Free→</button>
+        </div>
+        </div>
+    </div>
+  </div>
+  </div>
+    <div class=" container mx-auto max-w-screen-2xl flex w-screen justify-center items-center  lg:pt-24 min-[300px]:pt-16">
+    <div class="container mx-auto max-w-screen-2xl  flex flex-col lg:flex-row min-[300px]:items-center lg:items-start lg:justify-between space-y-8 lg:space-y-0 max-h-3/5 w-4/5 ">
+        <div class="flex flex-col items-center lg:items-start desc text-center lg:text-left space-y-6  lg:w-3/5 lg:pr-10 min-[300px]:w-full pt-6">
+            <h1 class="heading text-black">Take ideas from better to best</h1>
+            <p class="text-gray-600 text-wrap lg:text-lg font-thin text-base">Miro is the team's visual platform to connect, 
+collaborate and create -- together.</p>
+            <div class="inputs flex  flex-col justify-center items-center lg:items-start w-full">
+                <input type="text" placeholder="Enter your work email" class=" p-2 rounded-full w-3/5 lg:w-full border border-gray-400 text-gray-600 font-thin  ">
+                <button class="bg-[#4262FF] text-white lg:px-6 py-2 font-thin text-base  w-3/5 lg:w-full hover:bg-blue-600 rounded-full mt-3 ">Sign up free</button>
+                <p class="text-gray-600 font-thin text1">Collaborate with your team within minutes</p>
+
+            </div>
+            <div class="rating flex  items-center lg:items-start space-y-2  w-4/5 min-w-[325px]  bg-zinc-300 rounded-lg drop-shadow-lg p-2 space-x-3 ">
+                <div class="leftside flex flex-col justify-start w-3/5 ">
+                <div class="stars flex justify-center items-center  ">
+                    <svg xmlns="http://www.w3.org/2000/svg"   fill="orange" class="bi bi-star-fill mx-1    max-h-6 max-w-6 " viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg"   fill="orange" class="bi bi-star-fill mx-1    max-h-6 max-w-6" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg"   fill="orange" class="bi bi-star-fill mx-1    max-h-6 max-w-6" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg"   fill="orange" class="bi bi-star-fill mx-1    max-h-6 max-w-6" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg"   fill="orange" class="bi bi-star-half    max-h-6 max-w-6" viewBox="0 0 16 16">
+                        <path d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"/>
+                      </svg>
+               </div>
+               <p class="font-thin text-black text-xs">Based on 5145 reviews:</p>
+            </div>
+
+                <div class="brands flex space-x-4 justify-center items-center   h-full  ">
+                    <img src="public/g2-logo.png" class="object-scale-down w-1/6 h-full hover:scale-110 transition-all duration-150" alt="G2 Logo">
+                      <h1 class="font-semibold text-sm text-black hover:scale-110 transition-all duration-150 ">GetApp</h1>
+
+                    <h1 class="font-semibold text-sm text-black hover:scale-110 transition-all duration-150 ">CapTerra</h1>
+                </div>
+            </div>
+        </div>
+        <div class="right flex flex-col justify-start items-center  h-full w-4/5  "><img src="./public/home.png" class="object-scale-down h-full w-full" alt=""></div>
+    </div>
+    </div>
+
+    <div class="container mx-auto max-w-screen-2xl trustedBrands flex flex-col text-lg items-center  min-[300px]:mt-16  p-4 w-screen">
+    <!-- Trusted Users Text -->
+    <div class="trust flex justify-center items-center mb-4 w-4/5 font-thin  ">
+        <h4 class="text-gray-700 text-center text">Trusted by 45M+ users</h4>
+    </div>
+
+    <!-- Company Logos (Responsive Grid) -->
+    <div class=" flex w-4/5 items-center justify-center  ">
+      <div class="trustCompany w-full flex overflow-x-auto overflow-y-hidden md:grid  md:grid-cols-5 gap-x-4 items-center  lg:justify-center overflow-visible">
+          
+          <div class="imagecontainer w-32 h-24 flex-shrink-0 md:w-3/5 md:h-[10vh]  flex items-center justify-center origin-center ">
+              <img src="./public/walmart.png" alt="Walmart" class="w-full h-auto lg:object-scale-down object-contain shiver  ">
+          </div>
+          
+          <div class="imagecontainer w-32 h-24 flex-shrink-0 md:w-3/5 md:h-[10vh] flex items-center justify-center">
+              <img src="./public/cisco.png" alt="Cisco" class="w-full h-auto lg:object-scale-down object-contain  shiver">
+          </div>
+          
+          <div class="imagecontainer w-32 h-24 flex-shrink-0 md:w-3/5 md:h-[10vh] flex items-center justify-center ">
+              <img src="./public/volvo.png" alt="Volvo" class="w-full h-auto lg:object-scale-down object-contain shiver">
+          </div> 
+          
+          <div class="imagecontainer w-32 h-24 flex-shrink-0 md:w-3/5 md:h-[10vh] flex items-center justify-center">
+              <img src="./public/deloitte.png" alt="Deloitte" class="w-full h-auto lg:object-scale-down object-contain shiver">
+          </div>
+          
+          <div class="imagecontainer w-32 h-24 flex-shrink-0 md:w-3/5 md:h-[10vh] flex items-center justify-center">
+              <img src="./public/okta.png" alt="Okta" class="w-full h-auto lg:object-scale-down object-contain shiver">
+          </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto max-w-screen-2xl aboutSection flex flex-col justify-center items-center w-screen min-[300px]:mt-16  " id="pricing">
+       <div class="flex flex-col items-center w-4/5 "> 
+        <h4 class=" text1 py-1 px-2  rotate-[10deg] rounded-lg bg-yellow-400 text-black font-semibold whitespace-nowrap  lg:translate-x-full translate-x-3/4  uppercase ">Your ideas start here</h4>
+
+        <h1 class="heading text-black text-center lg:w-3/6 w-full max-w-full  lg:mt-4 mt-2 mb-8">Collaborate without constraints</h1>
+        <div class="about flex lg:flex-row min-[300px]:flex-col  lg:w-3/4 w-full max-w-full  mt-4 overflow-hidden lg:justify-between justify-center lg:items-start items-center lg:px-6 min-[300px]:space-y-4  lg:space-y-0 lg:space-x-8 "> 
+            <div class="content flex flex-col justify-start items-start  lg:w-4/12 text-gray-400  w-4/5  ">
+                <h1 class="subheading text-2xl font-bold text-black max-w-3/4 text-nowrap">Free Forever</h1>
+                <p class="text1 font-thin text-gray-600">Our free plan gives you unlimited team members, 3 boards, and 300+ expert-made templates. Signing up with your work email lets you bring in your team faster. See our
+                    <span class="text-blue-500"> pricing plans </span>for more  features.</p>
+            </div>
+            <div class="content flex flex-col justify-start items-start text-gray-400 lg:w-4/12   w-4/5 ">
+                <h1 class="subheading text-2xl font-bold text-black">Easy Integrations</h1>
+                <p class="text1 font-thin text-gray-600">Miro has 100+ powerful integrations with tools you already use like G Suite, Slack, and Jira, so your workflow is seamless. View the full list in our <span class="text-blue-500 hover:"> Marketplace.</span></p>
+            </div>
+            <div class="content flex flex-col justify-start items-start text-gray-400  lg:w-4/12  w-4/5 ">
+                <h1 class="subheading text-2xl font-bold text-black">Security First</h1>
+                <p class="text1 font-thin text-gray-600">We treat your data like you would — with the utmost care. We follow industry-leading security standards and give you tools to protect intellectual property.
+                    Learn more
+                    at our <span class="text-blue-500"> Trust Center. </span></p>
+            </div>
+        </div>
+        <div class="sign mt-16">
+            <button class="bg-blue-600 text-white px-4 py-2 rounded-full font-thin lg:text-lg text-base shiverr ">Sign Up Free→</button>
+        </div>
+    </div>
+    </div>
+    <div class="container mx-auto max-w-screen-2xl maincontainer flex items-center justify-center w-screen   min-[300px]:mt-16 " id="solution1">
+        <div class=" flex items-start lg:flex-row min-[300px]:flex-col min-[300px]:items-center lg:space-y-0 space-y-14 w-4/5 ">
+            <div class="left flex flex-col items-start lg:w-3/5 min[300px]:w-full  justify-center  ">
+                <h1 class="heading  text-wrap text-left  whitespace-pre mb-4 ">Work together, 
+whereever you work</h1>
+                <p class="text-gray-500 tex-wrap mb-4 font-thin text">In the office, remote, or a mix of the two, with Miro, your team can connect, collaborate, and co-create in one space no matter where you </p>
+                <a href="/learn" class=" text-blue-600 text-left text underline hover:cursor-pointer hover:scale-110 transition-all duration-150">Learn more→</a><!--this component is not working-->
+            </div>
+            <div class="right flex flex-col justify-start items-center  w-4/5  "><img src="./public/image.png" class="object-scale-down  w-full" alt=""></div>
+    
+        </div>
+    </div>
+    <div class="container mx-auto max-w-screen-2xl maincontainer flex justify-center w-screen   min-[300px]:mt-16 " id="solution2">
+
+    <div class=" flex items-center  lg:flex-row min-[300px]:flex-col  w-4/5 space-y-14 lg:space-y-0">
+    <div class="right   w-4/5 "><img src="./public/image1.png" class="object-scale-down  w-full"></div>
+
+        <div class="left flex flex-col items-start justify-start    p-4 ">
+<h1 class="heading text-wrap whitespace-pre mb-4">Connect 
+your tools,
+close your tabs</h1>
+            <p class="text-gray-300 tex-wrap mb-4 text font-thin text-gray-500">Whether you want to edit your Google Docs, resolve Jira issues, or collaborate over Zoom, Miro has 100+ intearations with tools vou alreadv use and love </p>
+            <a href="/learn" class=" underline text-blue-600 text-left text  hover:cursor-pointer hover:scale-110 transition-all duration-150">Learn more→</a><!--this component is not working-->
+        </div>
+
+    </div>
+    </div>
+<div class="container mx-auto max-w-screen-2xl  flex items-center justify-center min-[300px]:mt-16 w-screen  " id="resource1">
+    <div class="flex flex-col  justify-start w-4/5  space-y-10">
+      <h1 class="heading mb-4">Built for the way you work</h1>
+      <div class="buttons w-full flex flex-row justify-start gap-4 scroll-smooth overflow-x-auto lg:p-4">
+        <button type="button" class="rounded-full text1 text-black  p-2 focus:bg-sky-100 border whitespace-nowrap  text font-thin hover:scale-110 transition-all duration-150 focus:scale-110">Brainstorming</button>
+        <button type="button" class="rounded-full text1 text-black p-2 focus:bg-sky-100 border whitespace-nowrap font-thin hover:scale-110 transition-all duration-150 focus:scale-110">Diagramming</button>
+        <button type="button" class="rounded-full text1 text-black  p-2 focus:bg-sky-100 border whitespace-nowrap font-thin hover:scale-110 transition-all duration-150 focus:scale-110">Meeting and Workshop</button>
+        <button type="button" class="rounded-full text1 text-black  p-2 focus:bg-sky-100 border whitespace-nowrap font-thin hover:scale-110 transition-all duration-150 focus:scale-110">Scrum Events</button>
+        <button type="button" class="rounded-full text1 text-black p-2 focus:bg-sky-100 border whitespace-nowrap font-thin hover:scale-110 transition-all duration-150 focus:scale-110">Mapping</button>
+        <button type="button" class="rounded-full text1 text-black  p-2 focus:bg-sky-100 border whitespace-nowrap font-thin hover:scale-110 transition-all duration-150 focus:scale-110">Research and Design</button>
+        <button type="button" class="rounded-full  text1 text-black  p-2 focus:bg-sky-100 border whitespace-nowrap font-thin hover:scale-110 transition-all duration-150 focus:scale-110">Strategic Planning</button>
+      </div>
+      <div class="btncontent flex  lg:flex-row lg:mt-12 justify-center lg:items-start  w-full min-[300px]:flex-col min-[300px]:items-center max-h-screen w-full">
+            <div class="contentparagraph  flex flex-col  justify-start lg:w-3/5 ">
+                <h5 class="mb-4 text-black font-thin text-xl ">BrainStorming</h5>
+                <p class="text-wrap text-left text-gray-500 mb-4 lg:text-lg text font-thin">Unleash creative ideas and built on them with the help of sticky notes,images,mind maps,videos ,drawing capabilities - the list goes on.</p>
+                <a href="#" class=" text-blue-600   text hover:cursor-pointer  hover:underline  transition-all duration-150 origin-center">Learn more→</a>
+            </div>
+            <div class="contentImage  min-[300px]:mt-4 lg:mt-0  w-full h-3/5 lg:h-full">
+                <img src="./public/image2.png" class="w-full h-full object-scale-down" alt="">
+            </div>
+      </div>
+
+    </div>
+  </div>
+<div class="container mx-auto max-w-screen-2xl  flex items-start justify-center min-[300px]:mt-16 w-screen " id="resource2">
+    <div class="flex flex-col justify-start w-4/5 space-y-6">
+      <h1 class="heading">Built for all kind of teams</h1>
+      <div class="buttons h-1/12 w-full flex flex-row justify-start gap-4 scroll-smooth overflow-x-auto p-4">
+        <button type="button" class="rounded-full  text1  text-black  p-2 focus:bg-sky-100 border whitespace-nowrap font-thin hover:scale-110 transition-all duration-150 focus:scale-110">UI and UX Design</button>
+        <button type="button" class="rounded-full  text1  text-black  p-2 focus:bg-sky-100 border whitespace-nowrap font-thin hover:scale-110 transition-all duration-150 focus:scale-110">Marketing</button>
+        <button type="button" class="rounded-full  text1 text-black  p-2 focus:bg-sky-100 border whitespace-nowrap font-thin hover:scale-110 transition-all duration-150 focus:scale-110">Product Management</button>
+        <button type="button" class="rounded-full  text1  text-black  p-2 focus:bg-sky-100 border whitespace-nowrap font-thin hover:scale-110 transition-all duration-150 focus:scale-110">Engineering</button>
+        <button type="button" class="rounded-full  text1 text-black  p-2 focus:bg-sky-100 border whitespace-nowrap font-thin hover:scale-110 transition-all duration-150 focus:scale-110">Consulatants</button>
+        <button type="button" class="rounded-full  text1 text-black  p-2 focus:bg-sky-100 border whitespace-nowrap font-thin hover:scale-110 transition-all duration-150 focus:scale-110">Agile Coaches</button>
+        <button type="button" class="rounded-full  text1 text-black  p-2 focus:bg-sky-100 border whitespace-nowrap font-thin hover:scale-110 transition-all duration-150 focus:scale-110">Sales</button>
+      </div>
+      <div class="btncontent flex  lg:flex-row mt-16 justify-center  w-full min-[300px]:flex-col h-4/5  min-[300px]:mt-4">
+            <div class="contentparagraph  relative flex flex-col  justify-start   lg:w-3/5 space-y-4">
+                <div class="companyassurance flex flex-row gap-2 ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                    <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
+                  </svg>
+                  <span class="text-wrap text-left text-gray-600 mb-2 text font-thin">Build Low-fi wireframes</span>
+                </div>
+                <div class="companyassurance flex flex-row gap-2 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
+                      </svg>
+                      <span class="text-wrap text-left text-gray-600 mb-2 text font-thin">Invokes stakeholder in the design process</span>
+                    </div>
+                    <div class="companyassurance flex flex-row gap-2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
+                          </svg>
+                          <span class="text-wrap text-left text-gray-500 mb-2 font-thin text text-gray-600">Run engaging design workshops</span>
+                        </div>
+                       
+                <a href="/learn" class=" text-blue-600  text text-left hover:cursor-pointer hover:underline transition-all duration-150">Learn more→</a>
+                <div class="flex flex-col items-start justify-center">
+                  <p class="text font-thin text-black text-left">Integrate your favorite tools</p>
+                  <div class="flex items-center justify-center w-4/5">
+                  <img src="./public/logo.png" alt="">
+                </div>
+                </div>
+            </div>
+            <div class="contentImage lg:h-full w-full h-3/5  flex items-start ">
+                <img src="./public/image3.png" class="object-scale-down md:w-full md:h-full " alt="">
+            </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="container mx-auto max-w-screen-2xl bg-yellow-400 text-center flex flex-col justify-center items-center px-6  min-[300px]:mt-16 py-20" id="enterprise">
+    <!-- Header Section -->
+    <div class="mb-20 max-w-3xl">
+      <h2 class="heading font-bold text-black leading-tight">
+        Why companies large <br class="hidden md:block" /> and small trust Miro
+      </h2>
+      <a href="#" class="mt-4 inline-block  underline text-lg md:text-xl font-thin underline-offset-4 decoration-1 duration-150 transition-all hover:scale-110 ">
+        Contact Sales to request a demo
+      </a>
+    </div>
+  
+    <!-- Stats Section -->
+<div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-10 w-full max-w-5xl">
+      <!-- Stat Item -->
+      <div class="flex flex-col justify-center items-center h-40  lg:p-6 p-3 duration-150 transition-all hover:scale-110 hover:cursor-default">
+        <h3 class="lg:text-6xl font-bold text-black min-[300px]:text-5xl ">ISO</h3>
+        <p class="text-gray-800 mt-2  text2 text-center font-thin">
+          ISO-27001 enterprise-grade security compliant
+        </p>
+      </div>
+      <div class="flex flex-col justify-center items-center h-40  lg:p-6 p-3 duration-150 transition-all hover:scale-110 hover:cursor-default">
+        <h3 class="lg:text-6xl font-bold text-black min-[300px]:text-5xl">#1</h3>
+        <p class="text-gray-800 mt-2 text2 text-center font-thin">
+          Visual Collaboration Platform on G2
+        </p>
+      </div>
+      <div class="flex flex-col justify-center items-center h-40  lg:p-6 p-3 duration-150 transition-all hover:scale-110 hover:cursor-default">
+        <h3 class="lg:text-6xl font-bold text-black min-[300px]:text-5xl">99%</h3>
+        <p class="text-gray-800 mt-2 text2 text-center font-thin">
+          of the Fortune 100 are customers
+        </p>
+      </div>
+      <div class="flex flex-col justify-center items-center h-40 lg:p-6 p-3 duration-150 transition-all hover:scale-110 hover:cursor-default">
+        <h3 class="lg:text-6xl font-bold text-black min-[300px]:text-5xl">1,000+</h3>
+        <p class="text-gray-800 mt-2 text2 text-center text-balance font-thin">
+          community and expert-built templates
+        </p>
+      </div>
+      <div class="flex flex-col justify-center items-center h-40  lg:p-6 p-3 duration-150 transition-all hover:scale-110 hover:cursor-default">
+        <h3 class="lg:text-6xl font-bold text-black min-[300px]:text-5xl">45M+</h3>
+        <p class="text-gray-800 mt-2 text2 text-center font-thin">
+          users around the world
+        </p>
+      </div>
+      <div class="flex flex-col justify-center items-center h-40  lg:p-6 p-3 duration-150 transition-all hover:scale-110 hover:cursor-default">
+        <h3 class="lg:text-6xl font-bold text-black min-[300px]:text-5xl">100+</h3>
+        <p class="text-gray-800 mt-2 text2 text-center font-thin">
+          integrations with technology partners
+        </p>
+      </div>
+</div>
+  </div>
+  
+  
+  <section class="container mx-auto max-w-screen-2xl w-screen flex flex-col justify-center items-center min-[300px]:mt-16 p-6 min-[300px]:h-[90vh] md:h-auto">
+    <h2 class="heading font-bold text-center text-gray-800 mb-10">
+      Loved by the world's best teams
+    </h2>
+    <button class="text-blue-600 hover:underline lg:mb-16 rounded-full font-thin  border border-blue-400 p-4">
+      See all customer stories →
+    </button>
+
+    <!-- Testimonial Cards with Snap Scrolling -->
+    <div class="testimonialcards flex flex-row lg:justify-center items-stretch gap-6 w-full overflow-x-auto snap-x snap-mandatory  py-3 px-3 min-[300px]:h-auto lg:h-auto relative group">
+  
+      <!-- Card 1 -->
+      <div class="card flex flex-col items-start bg-white drop-shadow-lg shadow-gray-400 rounded-xl w-full sm:w-1/2 lg:w-1/3 border min-w-[300px] snap-center lg:h-auto flex-grow p-4">
+        <div class="imageContainer w-full h-40 flex justify-start items-center">
+          <img src="./public/vmware.png" alt="VMware Logo" class="object-scale-down w-3/4">
+        </div>
+        <div class="flex flex-col justify-between flex-grow space-y-4">
+          <p class="text-gray-500 text2 font-thin">
+            “When the pandemic hit, those of us who thrive on in-person collaboration were worried that our creativity and productivity would suffer. Miro was the perfect tool to help us with collaboration, whiteboarding, and retrospectives while remote.”
+          </p>
+          <div class="flex items-center gap-3">
+            <img src="public/corporate-black-woman-headshot-smile-260nw-2267075007.webp" alt="Roxanne Mustafa" class="w-10 h-10 rounded-full">
+            <div>
+              <p class="text-sm font-semibold text-gray-700">Roxanne Mustafa</p>
+              <p class="text-xs text-gray-500">Design Team Lead at VMware</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Card 2 -->
+      <div class="card flex flex-col items-start bg-white drop-shadow-lg shadow-gray-400 rounded-xl w-full sm:w-1/2 lg:w-1/3 border min-w-[300px] snap-center lg:h-auto flex-grow p-4">
+        <div class="imageContainer w-full h-40 flex justify-start items-center">
+          <h1 class="heading">DocuSign</h1>
+        </div>
+        <div class="flex flex-col justify-between flex-grow space-y-4">
+          <p class="text-gray-500 text2 font-thin">
+            “Miro helps solve one of the major gaps in product design: how to manage tasks across product designers whose projects are in different tools.”
+          </p>
+          <div class="flex items-center gap-3">
+            <img src="public/close-side-portrait-beautiful-confident-260nw-705000295.webp" alt="Jane Ashley" class="w-10 h-10 rounded-full">
+            <div>
+              <p class="text-sm font-semibold text-gray-700">Jane Ashley</p>
+              <p class="text-xs text-gray-500">Head of Design at DocuSign</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Card 3 -->
+      <div class="card flex flex-col items-start bg-white drop-shadow-lg shadow-gray-400 rounded-xl w-full sm:w-1/2 lg:w-1/3 border min-w-[300px] snap-center lg:h-auto flex-grow p-4">
+        <div class="imageContainer w-full h-40 flex justify-start items-center">
+          <h1 class="heading ">frog</h1>
+        </div>
+        <div class="flex flex-col justify-between flex-grow space-y-4">
+          <p class="text-gray-500 text2 font-thin">
+            “As we used Miro we moved from skepticism to belief to innovation, and now we have a tool that's at the core of what we do and will continue to extend into the future.”
+          </p>
+          <div class="flex items-center gap-3">
+            <img src="public/headshot-close-face-portrait-young-600nw-2510015507.webp" alt="Laura Baird" class="w-10 h-10 rounded-full">
+            <div>
+              <p class="text-sm font-semibold text-gray-700">Laura Baird</p>
+              <p class="text-xs text-gray-500">Associate Design Director at Frog</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    
+</section>
+<div class="container mx-auto max-w-screen-2xl flex justify-center w-screen min-[300px]:mt-16 items-center">
+    <div class="flex flex-col w-4/5 bg-[#09043C] text-white items-center justify-center  rounded-xl lg:py-32 min-[300px]:py-12 ">
+          <h1 class="heading mb-2  text-center ">Joins 45M+ users today</h1>
+          <p class="lg:text-xl font-thin text-gray-500 mb-4 min-[300px]:text-md text-center">Start for free-upgrade anytime</p>
+          <p class="underline lg:text-xl font-thin text-gray-500 mb-10 min-[300px]:text-md text-center underline-offset-4 hover:scale-110 transition-all duration-150 cursor-pointer">Joining as an organization?<a href="/contact" >Contact sales</a></p>
+          <button type="button" class="bg-[#4262FF] rounded-full border border-black p-2 text-white font-thin  lg:text-lg text-base text-center hover:scale-110 transition-all duration-150">Sign up free→</button>
+    </div>
+  </div>
+   
+  <footer class="container mx-auto max-w-screen-2xl flex justify-center items-center  items-start bg-[#09043C] min-[300px]:mt-16">
+    <div class=" w-full  md:p-10 p-4">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 pt-6">
+        <!-- Column 1 -->
+        <div>
+          <h4 class="font-semibold mb-4 text-white text-xl">Product</h4>
+          <ul class="space-y-2 text-md font-thin text-white"> 
+            <li><a href="#" class="hover:underline text2">Online whiteboard</a></li>
+            <li><a href="#" class="hover:underline text2">Apps & Integrations</a></li>
+            <li><a href="#" class="hover:underline text2">Templates</a></li>
+            <li><a href="#" class="hover:underline text2">Miroverse</a></li>
+            <li><a href="#" class="hover:underline text2">Security & Compliance</a></li>
+            <li><a href="#" class="hover:underline text2">Accessibility</a></li>
+  
+            <li><a href="#" class="hover:underline text2">Changelog</a></li>
+            <li><a href="#" class="underline underline-offset-4 text2">View demo&rarr;</a></li>
+  
+  
+  
+          </ul>
+        </div>
+        <!-- Column 2 -->
+        <div class="text-white">
+          <h4 class="font-semibold mb-4 text-white text-xl">Solutions</h4>
+          <ul class="space-y-2 text-md font-thin text-white">
+            <li><a href="#" class="hover:underline text2">Meetings and Workshops</a></li>
+            <li><a href="#" class="hover:underline text2">Agile Workflows</a></li>
+            <li><a href="#" class="hover:underline text2">Research & Design</a></li>
+            <li><a href="#" class="hover:underline text2">Diagramming</a></li>
+            <li><a href="#" class="hover:underline text2">Strategy & Planning</a></li>
+            <li><a href="#" class="hover:underline text2">Mind Map</a></li>
+            <li><a href="#" class="hover:underline text2">Concept Map</a></li>
+            <li><a href="#" class="hover:underline text2">Online Sticky Notes</a></li>
+            <li><a href="#" class="hover:underline text2">Flowchart</a></li>
+            <li><a href="#" class="hover:underline text2">Wirefarming</a></li>
+  
+          </ul>
+        </div>
+        <!-- Column 3 -->
+        <div class="text-white">
+          <h4 class="font-semibold mb-4 text-white text-xl">Resources</h4>
+          <ul class="space-y-2 text-md font-thin text-white">
+            <li><a href="#" class="hover:underline text2">Miro Academy</a></li>
+            <li><a href="#" class="hover:underline text2">Help Center</a></li>
+            <li><a href="#" class="hover:underline text2">Blog</a></li>
+            <li><a href="#" class="hover:underline text2">Status</a></li>
+            <li><a href="#" class="hover:underline text2">Miro Community</a></li>
+            <li><a href="#" class="hover:underline text2">Miro Professional Network</a></li>
+  
+            <li><a href="#" class="hover:underline text2">Miro Experts Directory</a></li>
+            <li><a href="#" class="hover:underline text2">Miro Events</a></li>
+  
+          </ul>
+        </div>
+        <!-- Column 4 -->
+        <div class="text-white">
+          <h4 class="font-semibold mb-4 text-white text-xl">Company</h4>
+          <ul class="space-y-2 text-md font-thin text-white">
+            <li><a href="#" class="hover:underline text2">About Us</a></li>
+            <li><a href="#" class="hover:underline text2">Careers</a></li>
+            <li><a href="#" class="hover:underline text2">Miro in the News</a></li>
+            <li><a href="#" class="hover:underline text2">Customer Stories</a></li>
+          </ul>
+        </div>
+        <!-- Column 5 -->
+        <div class="text-white">
+          <h4 class="font-semibold mb-4 text-white text-xl">Plans and Pricing</h4>
+          <ul class="space-y-2 text-md font-thin text-white">
+            <li><a href="#" class="hover:underline text2">Pricing</a></li>
+            <li><a href="#" class="hover:underline text2">Business</a></li>
+            <li><a href="#" class="hover:underline text2">Enterprise</a></li>
+            <li><a href="#" class="hover:underline text2">Consultants</a></li>
+  
+            <li><a href="#" class="hover:underline text2">Education</a></li>
+            <li><a href="#" class="hover:underline text2">Startups</a></li>
+            <li><a href="#" class="hover:underline text2">NPOS</a></li>
+  
+            <li><a href="/Contact.html" class="underline text2 underline-offset-4">Contact Sales&rarr;</a></li>
+  
+  
+          </ul>
+        </div>
+      </div>
+      <!-- Bottom Section -->
+      <div class="flex flex-col lg:flex-row justify-between items-center mt-10 border-t border-gray-700 pt-6 space-y-4   ">
+        <div class="logocontainer flex justify-center items-center lg:flex-row min-[300px]:flex-col  lg:w-3/5 w-full space-x-6 ">
+            <div class="flex justify-center items-center space-x-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-twitter" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-youtube" viewBox="0 0 16 16">
+                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+              </svg>
+              <div class="flex items-center justify-center space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="white" viewBox="0 0 16 16">
+                <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
+            </svg><span class="text-white heading1">EN</span>
+          </div>
+            </div>
+              <div class="flex items-center justify-center space-x-4 mt-4 lg:mt-0 text-white">
+                <p class="text2">&copy; 2022 Miro</p>
+               
+                  <a href="#" class="hover:underline text2 font-normal">Privacy Policy</a>
+                  <a href="#" class="hover:underline text2">Terms of Service</a>
+                  <a href="#" class="hover:underline text2">Manage Cookies</a>
+                
+            </div>
+        </div>
+        <div class="flex items-center lg:justify-end min-[300px]:justify-center lg:flex-row  lg:w-1/3 w-3/5  ">
+           
+               <img src="./public/footer.png" class="h-full w-full object-scale-down" alt="">
+            
+            
+            
+        </div>
+      
+      </div>
+    </div>
+  </footer>
+</body>
+<script>
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const radioButtons = document.querySelectorAll(".dropdown");
+    let prev = null; 
+
+    radioButtons.forEach((radio) => {
+        radio.addEventListener("click", () => {
+            console.log("Clicked:", radio.id, "Checked:", radio.checked);
+            let btn=radio.nextElementSibling;
+            
+            let section=btn.nextElementSibling;
+            console.log(section)
+            let rect=btn.getBoundingClientRect();
+            console.log(rect.width);
+            section.style.width=rect.width+"px";
+
+            if (radio.checked) {
+                if (radio.classList.contains("selected")) {
+                    radio.checked = false;
+                    radio.classList.remove("selected");
+                    prev = null;
+                } else {
+                    if (prev) prev.classList.remove("selected");
+                    radio.classList.add("selected");
+                    prev = radio;
+                }
+            }
+        });
+    });
+
+    const navbar = document.getElementById("navbar");
+    let lastScrollY = window.scrollY;
+    let scrollTimeout;
+    let isHovered = false;
+
+    // Show navbar when scrolling
+    window.addEventListener("scroll", () => {
+      const currentScrollY = window.scrollY;
+
+      navbar.classList.remove("opacity-0");
+
+      if (currentScrollY === 0) {
+        navbar.classList.remove("opacity-0");
+        return;
+      }
+
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        if (window.scrollY !== 0 && !isHovered) {
+          navbar.classList.add("opacity-0");
+        }
+      }, 1000);
+
+      lastScrollY = currentScrollY;
+    });
+
+    navbar.addEventListener("mouseenter", () => {
+      isHovered = true;
+      navbar.classList.remove("opacity-0");
+    });
+
+    navbar.addEventListener("mouseleave", () => {
+      isHovered = false;
+      if (window.scrollY !== 0) {
+        navbar.classList.add("opacity-0");
+      }
+    });
+  });
+document.addEventListener('click', function(event) {
+    const excludedDiv = document.querySelector('.left');
+    if(excludedDiv.contains(event.target)){
+      return;
+    }
+    document.querySelectorAll('.dropdown').forEach((item) => {
+        if (item.checked) {
+            item.checked = false;
+        }
+    });
+});
+
+
+
+
+
+</script>
+</html>
+

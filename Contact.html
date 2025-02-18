@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="container mx-auto max-w-screen-2xl flex justify-center items-center">
+  <div id="customAlert" class="flex items-center justify-center fixed top-5  z-50 bg-white text-black font-thin px-4 py-2 rounded shadow-lg opacity-0 pointer-events-none transition-opacity duration-300 ">
+    <img src="" alt="" class="w-8 h-6 mr-2 object-scale-down">
+    <p class="text1 font-thin text-center text-wrap"></p>
+  
+  </div>
+  </div>
+  <div class=" container mx-auto max-w-screen-2xl navbar flex justify-between items-center lg:p-4 bg-white  min-w-[310px]">
+        <div class="left flex items-center space-x-6 min-[300px]:flex-col lg:flex-row  min-[300px]:grow lg:grow-0">
+          <a href="/Home.html" class="mb-2"><img src="./public/miro.png" class="w-28 h-12 hover:scale-110 transition-all duration-150" alt=""></a>
+
+            <nav class="flex space-x-4 ">
+              <div class="feature group relative">
+                <input type="radio" id="product" name="feature" class="dropdown hidden peer">
+              
+                <button class="flex items-center space-x-1 font-medium peer-checked:border font-thin peer-checked:border-b-0  peer-checked:font-semibold  peer-checked:shadow-inner peer-checked:scale-110 peer-checked:shadow-gray-400 border-b-0">
+                  <label for="product" class="flex items-center justify-center">
+                    <span class="text1  text-gray-600">Product</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 lg:w-4 lg:h-4" fill="currentColor" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                    </svg>
+                  </label>
+                </button>
+              
+                <div class="section flex flex-col absolute border-2 bg-white   
+              transition-all duration-300 ease-in-out origin-top  
+              opacity-0 scale-95 h-0 overflow-hidden pointer-events-none  
+              peer-checked:opacity-100 peer-checked:scale-100  
+              peer-checked:h-auto peer-checked:translate-y-0 peer-checked:pointer-events-auto -left-1 border-t-0">
+    <a href="/product.html" class="flex items-center hover:bg-sky-100 hover:scale-110 hover:text-blue-500 font-normal  z-10  space-x-2 p-2 text1">Product</a>
+    <a href="/product.html" class="flex items-center hover:bg-sky-100 hover:scale-110 hover:text-blue-500 font-normal  z-10  space-x-2 p-2 text1">Product</a>
+    <a href="/product.html" class="flex items-center hover:bg-sky-100 hover:scale-110 hover:text-blue-500 font-normal  z-10  space-x-2 p-2 text1">Product</a>
+  </div>
+              </div>
+              
+            
+                <div class="feature group relative">
+                      <input type="radio" name="feature" id="resource" class="dropdown peer hidden">
+
+                    <button class="flex items-center space-x-1 font-medium peer-checked:border font-thin peer-checked:border-b-0  peer-checked:font-semibold  peer-checked:shadow-inner peer-checked:scale-110 peer-checked:shadow-gray-400 border-b-0">
+                      <label for="resource" class="flex items-center justify-center">
+                        <span class=" text1  text-gray-600">Resource</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 lg:w-4 lg:h-4" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                        </svg>
+                      </label>
+                    </button>
+                    <div class="section flex flex-col absolute border-2 bg-white   
+                    transition-all duration-300 ease-in-out origin-top  
+                    opacity-0 scale-95 h-0 overflow-hidden pointer-events-none  
+                    peer-checked:opacity-100 peer-checked:scale-100  
+                    peer-checked:h-auto peer-checked:translate-y-0 peer-checked:pointer-events-auto -left-1 border-t-0">
+                      <a href="/product.html" class="flex items-center hover:bg-sky-100 hover:scale-110 hover:text-blue-500 font-normal  z-10  space-x-2 p-2 text1">Resource</a>
+                      <a href="/product.html" class="flex items-center hover:bg-sky-100 hover:scale-110 hover:text-blue-500 font-normal  z-10  space-x-2 p-2 text1">Resource</a>
+                      <a href="/product.html" class="flex items-center hover:bg-sky-100 hover:scale-110 hover:text-blue-500 font-normal  z-10  space-x-2 p-2 text1">Resource</a>
+                  </div>
+
+                </div>
+                <div class="feature group relative ">
+                  <input type="radio" class="dropdown hidden peer" name="feature" id="solution">
+                 
+
+                    <button class="flex items-center space-x-1 font-medium peer-checked:border font-thin peer-checked:border-b-0  peer-checked:font-semibold  peer-checked:shadow-inner peer-checked:scale-110 peer-checked:shadow-gray-400">
+                      <label for="solution" class="flex items-center justify-center ">
+
+                        <span class="text1  text-gray-600">Solution</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 lg:w-4 lg:h-4" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                        </svg>
+                    </button>
+                    <div class="section flex flex-col absolute border-2 bg-white   
+                    transition-all duration-300 ease-in-out origin-top  
+                    opacity-0 scale-95 h-0 overflow-hidden pointer-events-none  
+                    peer-checked:opacity-100 peer-checked:scale-100  
+                    peer-checked:h-auto peer-checked:translate-y-0 peer-checked:pointer-events-auto -left-1 border-t-0">
+                      <a href="/solution.html" class="flex items-center hover:bg-sky-100 hover:scale-110 hover:text-blue-500 font-normal  z-10  space-x-2 p-2 text1">Item1</a>
+                      <a href="/solution.html" class="flex items-center hover:bg-sky-100 hover:scale-110 hover:text-blue-500 font-normal  z-10  space-x-2 p-2  text1">Item2</a>
+                      <a href="/solution.html" class="flex items-center hover:bg-sky-100 hover:scale-110 hover:text-blue-500 font-normal  z-10  space-x-2 p-2 text1">Item3</a>
+                  </div>
+
+                </div>
+                <div class="feature flex items-start">
+                    <a href="/Enterprise.html" class="text1 font-thin text-gray-600 ">Enterprises</a>
+                </div>
+                <div class="feature flex items-start">
+                    <a href="/Pricing.html" class="text1 font-thin text-gray-600 ">Pricing</a>
+                </div>
+            </nav>
+        </div>
+        <div class="right flex items-center space-x-4 relative  group  ">
+            <input type="checkbox" id="menu-toggle" class="peer hidden">
+
+            <!-- Label acts as button to toggle the menu -->
+            <label for="menu-toggle" class="threedotts cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-three-dots-vertical lg:hidden z-1" viewBox="0 0 16 16">
+                    <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                </svg>
+            </label>
+            <div class="register lg:border-none lg:flex lg:static lg:flex-row lg:justify-center p-2 lg:items-center min-[300px]:flex-col min-[300px]:absolute min-[300px]:top-[210%] min-[300px]:z-[51] min-[300px]:w-[28vw] lg:w-auto min-[300px]:right-0 min-[300px]:bg-white min-[300px]:hidden peer-checked:flex min-[300px]:items-start min-[300px]:border min-[300px]:drop-shadow-lg lg:drop-shadow-none lg:border-0 min-[300px]:space-y-2 lg:space-y-0 peer-checked:flex smooth-drop lg:space-x-4 lg:pointer-events-auto pointer-events-none peer-checked:pointer-events-auto lg:animate-none">
+            <button class="text1 font-thin text-gray-600 text-gray-600 hover:text-blue-500 text-left min-[300px]:drop-shadow-lg lg:border-none min-[300px]:border-b w-full lg:w-auto min-[300px]:inset-shadow-sm lg:shadow-none hover:scale-110 transition-transform linear duration-150 lg:hover:underline underline-offset-4 lg:flex hidden space-x-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
+                </svg>
+                <span class="text1 font-thin text-gray-600 hover:text-blue-500">EN</span>
+            </button>
+            <a href="/Contact.html" class="text1 font-thin text-gray-600 text-gray-600 hover:text-blue-500 text-left min-[300px]:drop-shadow-lg lg:border-none min-[300px]:border-b w-full lg:w-auto min-[300px]:inset-shadow-sm lg:shadow-none hover:scale-110 transition-transform linear duration-150 lg:hover:underline underline-offset-4">Contact Sales</a>
+            <a href="/Login.html" class=" text1 font-thin text-gray-600 text-gray-600 hover:text-blue-500 text-left min-[300px]:drop-shadow-lg lg:border-none min-[300px]:border-b w-full lg:w-auto min-[300px]:inset-shadow-sm lg:shadow-none hover:scale-110 transition-transform linear duration-150 lg:hover:underline underline-offset-4">Login</a>
+            <button class="item bg-[#4262FF] text-white px-4 py-2 max-h-[6vh] rounded-full hover:bg-blue-600 lg:block truncate text1 font-thin lg:border-none min-[300px]:border-b lg:w-auto min-[300px]:inset-shadow-sm lg:shadow-none hover:scale-110 transition-all duration-150">Sign Up Free→</button>
+        </div>
+        </div>
+  </div>
+  <div class="container mx-auto max-w-screen-2xl bg-white  rounded-lg lg:p-4 mt-16 w-screen ">
+ 
+      
+      <div class="flex items-center lg:mb-20 mb-10 md:space-x-6 space-x-2 ml-4">
+        <span class="h-[3px] sm:w-[70px] w-[40px] bg-black"></span>
+        <h2
+          class="heading ">
+          Contact us
+        </h2>
+      </div>
+
+        <div class="flex items-start justify-center text-center px-4">
+            <!-- Address Section -->
+            <div class="flex items-center  w-1/3 space-x-4 ">
+                <div class="  hover:scale-110 transition-all duration-150 w-1/5">
+                    <img src="./public/image copy 29.png" alt="" class="w-full h-full object-scale-down">
+                </div>
+                <div class="flex flex-col items-start">
+                <h3 class="text font-semibold mt-2 hover:scale-110 transition-all duration-150 cursor-default">Address</h3>
+                <p class="text-gray-600 text1 hover:scale-110 transition-all duration-150 cursor-default text-left">Jaipur, Rajasthan, INDIA</p>
+                <p class="text-gray-600 text1 hover:scale-110 transition-all duration-150 cursor-default">Pin 342087</p>
+              </div>
+            </div>
+
+            <!-- Call Us Section -->
+            <div class="flex  items-center justify-center w-1/3 space-x-4">
+                <div class=" hover:scale-110 transition-all duration-150 w-1/5">
+                    <img src="./public/image copy 30.png" alt="" class="w-full h-full object-scale-down">
+                </div>
+                <div class="flex flex-col items-start justify-start">
+
+                <h3 class="text font-semibold mt-2 hover:scale-110 transition-all duration-150 cursor-default">Call us</h3>
+                <p class="text-gray-600 text1 hover:scale-110 transition-all duration-150 cursor-default">+91 98765 43210</p>
+                </div>
+            </div>
+
+            <!-- Email Us Section -->
+            <div class="flex  items-center w-1/3 justify-center space-x-4">
+              <div class=" hover:scale-110 transition-all duration-150 w-1/5">
+                <img src="./public/image copy 31.png" alt="" class="w-full h-full object-scale-down">
+            </div>
+                <div class="flex flex-col items-start justify-start">
+
+                <h3 class="text font-semibold mt-2 hover:scale-110 transition-all duration-150 cursor-default">Email us</h3>
+                <p class="text-gray-600 text1 hover:scale-110 transition-all duration-150 cursor-default">info@test.com</p>
+                </div>
+            </div>
+        </div>
+  </div>
+  <div class="formContainer container  mx-auto max-w-screen-2xl flex  flex-col items-center justify-start  bg-sky-100 min-[450px]:p-10 p-6 w-screen mt-16">
+        <h1 class="text-[clamp(24px,7vw,48px)] whitespace-pre  mb-10 font-normal">Get in touch with us, 
+We are here to assist you</h1>
+        <div class="form flex items-center justify-center bg-white  lg:w-4/6 w-full rounded-xl">
+            <form class="w-full  lg:px-16 py-10 min-[300px]:px-4 flex flex-col justify-start " type="Submit" enctype="multipart/form-data" novalidate >
+                <div class="grid grid-cols-2 lg:gap-x-16 gap-x-10 md:gap-y-6 gap-y-2   w-full lg:text-lg text-sm">
+                    <div class="relative">
+                      <div class=" group lg:mb-4 ">
+                        <label class="block text-gray-400  text-form ">Full name  <span class="text-red-500 ">*</span>  </label>
+                      </div>
+                      <div class="relative ">
+                     
+                        <input type="text" placeholder=""   class="w-full border-b border-black py-2 focus:outline-none overflow-visible text2 lg:text-base focus:border-blue-400 font-thin transition-all duration-150  " required minlength="8" maxlength="22" pattern="[A-Za-z]+" name="fullname" >
+                        <div class="iconcotainer absolute lg:h-5 lg:w-5 h-3 w-3 left-full bottom-2  transition-opacity duration-150 opacity-0 "><img src="./public/exclamation.png" alt=""></div>
+                      </div>
+                        <p class="error-text text-left text-red-500 sm:text-xs   text-[7px] transition-all duration-150 "></p>
+                        
+                    </div>
+                     <div class="relative ">
+                      <div class="lg:mb-4 group ">
+                        <label class="block text-gray-400  text-form">Email address <span class="text-red-500 ">*</span>  </label>
+                      </div> 
+                      <div class="relative ">
+                   
+                      
+                        <input type="email" placeholder="" class="w-full border-b border-black p-2 focus:outline-none focus:border-blue-400 text2 lg:text-base focus:border-blue-400 font-thin " required name="email">
+                        <div class="iconcotainer absolute lg:h-5 lg:w-5 h-3 w-3 left-full bottom-2 transition-opacity duration-150 opacity-0 "><img src="./public/exclamation.png" alt=""></div>
+                      </div>
+                        <p class=" error-text text-left text-red-500 sm:text-xs  text-[7px] transition-all duration-150 "></p>
+
+                    </div>
+                    <div class="relative ">
+                      <div class="lg:mb-4 group ">
+                      
+                        <label class="block text-gray-400 text-nowrap truncate  text-form">Phone number <span class="text-red-500 ">*</span> </label>
+                       
+
+
+                      </div>
+                      <div class="relative ">
+
+                        <input type="tel" placeholder="" class="w-full border-b border-black p-2 focus:outline-none focus:border-blue-400 text2 font-thin " required maxlength="10" patter="[0-9]+" name="phonenumber">
+                        <div class="iconcotainer absolute lg:h-5 lg:w-5 h-3 w-3 left-full bottom-2 transition-opacity duration-150 opacity-0 "><img src="./public/exclamation.png" alt=""></div>
+                      </div>
+                        <p class="error-text text-left text-red-500 sm:text-xs  text-[7px] transition-all duration-150"></p>
+
+                    </div>
+                    <div>
+                      <div class="lg:mb-4 group ">
+
+                        <label class="block text-gray-400  text-form ">Date of birth <span class="text-red-500 ">*</span> </label>
+                       
+
+
+                      </div>
+                      <div class="relative ">
+
+                        <input type="date" class="w-full border-b border-black py-2 focus:outline-none text-form focus:border-blue-400 text2 font-thin text-gray-400" name="dateofbirth" pattern="\d{2}-\d{2}-\d{4}" min="1947-01-01" max="2005-12-31" required>
+                        <div class="iconcotainer absolute lg:h-5 lg:w-5 h-3 w-3 left-full bottom-2  transition-opacity duration-150 opacity-0 "><img src="./public/exclamation.png" alt=""></div>
+                      </div>
+                      <p class="error-text text-left text-red-500 sm:text-xs  text-[7px] transition-all duration-150"></p>
+
+                    </div>
+                    <div class="relative">
+                      <!-- Field label -->
+                      <div class="lg:mb-4 group">
+                        <label class="block text-gray-400 text-form">
+                          Gender <span class="text-red-500">*</span>
+                        
+                        </label>
+                      </div>
+                      
+                      <div class="relative ">
+                      
+                      <input 
+                        type="text" 
+                        placeholder="Select Or Specify" 
+                        class="w-full border-b border-black p-2 focus:outline-none focus:border-blue-400 text2 font-thin mt-0" 
+                        name="gender"
+                         
+                        required
+                      >
+                      <div class="iconcotainer absolute lg:h-5 lg:w-5 h-3 w-3 left-full bottom-2  transition-opacity duration-150 opacity-0 "><img src="./public/exclamation.png" alt=""></div>
+                      </div>
+                    
+                      <p class=" error-text  text-red-500 sm:text-xs   text-[7px] transition-all duration-150"></p>
+
+                      
+                      <!-- Toggle label for checkbox (positioned at bottom-right of input) -->
+                      <label for="tick" class="h-4 w-4 absolute  right-0 bottom-0 cursor-pointer shadow-inner  shadow-gray-400"><img src="./public/dropdown.png" alt="" srcset="" class="object-scale-down"></label>
+                      
+                      <!-- Hidden checkbox (acts as peer) -->
+                      <input 
+                        type="checkbox" 
+                        id="tick" 
+                        class="hidden peer"
+                      >
+                      
+                      <!-- Option container, absolutely positioned below the input -->
+                      <div class="optioncontainer hidden peer-checked:flex flex-col absolute top-full left-0 w-full bg-white border smooth-drop z-10 drop-shadow-lg shadow-inner shadow-gray-400">
+                        <div class="option  px-2 hover:bg-sky-600 hover:text-white cursor-pointer drop-shadow-lg shadow-inner shadow-gray-300">Male</div>
+                        <div class="option  px-2 hover:bg-sky-600 hover:text-white cursor-pointer drop-shadow-lg shadow-inner shadow-gray-300">Female</div>
+                        <div class="option  px-2 hover:bg-sky-600 hover:text-white cursor-pointer drop-shadow-lg shadow-inner shadow-gray-300">Other</div>
+                      </div>
+                    </div>
+                    
+                    
+                    <div class="relative">
+                      <!-- Field label -->
+                      <div class="lg:mb-4 group">
+                        <label class="block text-gray-400 text-form">
+                          City 
+                        </label>
+                      </div>
+                      
+                     
+                      <div class="relative">
+                        <input 
+                          type="text" 
+                          id="cityInput"
+                          placeholder="Your City.." 
+                          class="w-full border-b border-black p-2 pr-16 focus:outline-none focus:border-blue-400 text2 font-thin mt-0" 
+                        
+                          maxlength="20" 
+                          
+                        >
+                       
+                        <!-- Word count display positioned at the top-right corner of the input -->
+                        <div id="charCount" class="charcounter absolute right-0 top-0 mt-2 mr-2 lg:text-sm text-xs text-gray-500 bg-white">
+                          0 / 20
+                        </div>
+                      </div>
+                      <p class="error-text text-red-500 sm:text-xs   text-[7px] transition-all duration-150"></p>
+
+                    </div>
+                    
+                    <!-- state -->
+                    <div class="relative">
+                      <!-- Field label -->
+                      <div class="lg:mb-4 group">
+                        <label class="block text-gray-400 text-form">
+                          State <span class="text-red-500">*</span>
+                          <span class="md:ml-2 sm:text-xs text-[7px] text-red-500 italic opacity-0 transition-opacity duration-150">
+                            Required!
+                          </span>
+                        </label>
+                      </div>
+                      
+                      <div class="relative">
+
+                      <input 
+                        type="text" 
+                        placeholder="Select Or Specify" 
+                        class="w-full border-b border-black p-2 focus:outline-none focus:border-blue-400 text2 font-thin mt-0" 
+                        name="state"
+                         
+                        required
+                      >
+                      <div class="iconcotainer absolute lg:h-5 lg:w-5 h-3 w-3 left-full bottom-2  transition-opacity duration-150 opacity-0 "><img src="./public/exclamation.png" alt=""></div>
+                      </div>
+                      <p class=" error-text  text-red-500 sm:text-xs   text-[7px] transition-all duration-150"></p>
+
+                      
+                      <!-- Toggle label for checkbox (positioned at bottom-right of input) -->
+                      <label for="state" class="h-4 w-4 absolute  right-0 bottom-0 cursor-pointer shadow-inner  shadow-gray-400"><img src="./public/dropdown.png" alt="" srcset="" class="object-scale-down"></label>
+                      
+                      <!-- Hidden checkbox (acts as peer) -->
+                      <input 
+                        type="checkbox" 
+                        id="state" 
+                        class="hidden peer"
+                      >
+                      
+                      <!-- Option container, absolutely positioned below the input -->
+                      <div class="statecontainer hidden peer-checked:flex flex-col absolute top-full left-0 w-full bg-white border smooth-drop z-10 drop-shadow-lg shadow-inner shadow-gray-400 overflow-y-auto max-h-[30vh]">
+                        <div class="option  px-2 hover:bg-sky-600 text-red-500 cursor-pointer drop-shadow-lg shadow-inner shadow-gray-50">Not Found!</div>
+                       
+                      </div>
+                    </div>
+                    <div class="relative">
+                      <div class="lg:mb-4 group">
+                        <label class="block text-gray-400 text-form">
+                          Country <span class="text-red-500">*</span>
+                         
+                        </label>
+                      </div>
+                      <div class="relative">
+                      
+                      <input 
+                        type="text" 
+                        placeholder="Select Your Country" 
+                        class="w-full border-b border-black p-2 focus:outline-none focus:border-blue-400 text2 font-thin mt-0" 
+                        name="country"
+                         
+                        required
+                      >
+                      <div class="iconcotainer absolute lg:h-5 lg:w-5 h-3 w-3 left-full bottom-2  transition-opacity duration-150 opacity-0 "><img src="./public/exclamation.png" alt=""></div>
+                      </div>
+                      <p class="error-text text-red-500 sm:text-xs   text-[7px] transition-all duration-150"></p>
+
+                       <label for="country" class="h-4 w-4 absolute  right-0 bottom-0 cursor-pointer  shadow-inner  shadow-gray-400"><img src="./public/dropdown.png" alt="" srcset="" class="object-scale-down"></label>
+                      
+                      <input 
+                        type="checkbox" 
+                        id="country" 
+                        class="hidden peer"
+                      >
+                      <div class="countrycontainer hidden peer-checked:flex flex-col absolute top-full left-0 w-full bg-white border smooth-drop z-10 drop-shadow-lg shadow-inner shadow-gray-400 overflow-y-auto scroll-smooth max-h-[30vh]">
+                    
+                      
+                    </div>
+                       
+                    </div>
+                    <div class="relative">
+                      <!-- Field label -->
+                      <div class="lg:mb-4 group">
+                        <label class="block text-gray-400 text-form">
+                          Address <span class="text-red-500">*</span>
+                        
+                        </label>
+                      </div>
+                      
+                      <!-- Input field container with character count display -->
+                      <div class="relative">
+                        <input 
+                          type="text" 
+                          id="addressInput"
+                          
+                          class="w-full border-b border-black p-2 pr-16 focus:outline-none focus:border-blue-400 text2 font-thin mt-0" 
+                          name="address"  
+                          required
+                        >
+                        <div class="iconcotainer absolute lg:h-5 lg:w-5 h-3 w-3 left-full bottom-2  transition-opacity duration-150 opacity-0"><img src="./public/exclamation.png" alt=""></div>
+
+                        <!-- Character count display positioned at the top-right corner of the input -->
+                        <div id="addresschar" class="charcounter absolute right-0 top-0 mt-2 mr-2 lg:text-sm text-gray-500 text-xs bg-white">
+                          0 / 60
+                        </div>
+                      </div>
+                      <p class="error-text text-red-500 sm:text-xs   text-[7px] transition-all duration-150"></p>
+
+                    </div>
+                    
+                    <div class="relative">
+                      <!-- Field label -->
+                      <div class="lg:mb-4 group">
+                        <label class="block text-gray-400 text-form">
+                          Message 
+                          
+                        </label>
+                      </div>
+                      
+                      <!-- Input field container with character count display -->
+                      <div class="relative">
+                        <input 
+                          type="text" 
+                          id="messageinput"
+                          
+                          class="w-full border-b border-black p-2 pr-16 focus:outline-none focus:border-blue-400 text2 font-thin mt-0" 
+                          name="message"  
+                         
+                        >
+                        <!-- Character count display positioned at the top-right corner of the input -->
+                        <div id="message" class="charcounter absolute right-0 top-0 mt-2 mr-2 lg:text-sm text-xs text-gray-500 bg-white">
+                          0 / 100
+                        </div>
+                      </div>
+                      <p class="error-text text-red-500 sm:text-xs   text-[7px] transition-all duration-150"></p>
+
+                    </div>
+                    <div class="flex  flex-col items-start " id="request">
+                        <span class="text-gray-400  text-form">Request a counselling session</span>
+                        <div class="flex justify-start  overflow-visible group space-x-2">
+                        <label class="flex items-center space-x-2">
+                            <input type="radio" name="counselling" class=" peer" >
+                           
+                            <span class="font-thin text1">Yes</span>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input type="radio" name="counselling" class=" peer" checked>
+                          
+                            <span class="font-thin text1">No</span>
+                        </label>
+                    </div>
+                    </div>
+                    <div class="w-full ">
+                        <label class="block text-gray-400 lg:mb-2 font-medium text-wrap text-form">Upload your CV/Resume <span class=" text-red-500">*</span> <span class="md:ml-2 sm:text-xs text-[7px] text-red-500 italic opacity-0 transition-opacity duration-150" >Required!</span> </label>
+                        <div class="relative border-b border-black py-3  cursor-pointer flex items-center space-x-2">
+                            <input type="file" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" id="fileInput" name="fileupload" accept=".pdf,.txt,application/pdf,text/plain" required>
+                            <div class="iconcotainer absolute lg:h-5 lg:w-5 h-3 w-3 left-full bottom-2  transition-opacity duration-150 opacity-0 "><img src="./public/exclamation.png" alt=""></div>
+                            <span class="text-gray-500" id="fileuploadlogo">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cloud-arrow-up" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M7.646 5.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708z"/>
+                                    <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                            </span>
+
+                        <img id="preview" class="mt-2 hidden w-6 h-6 object-cover rounded-lg border" />
+
+                            <span id="file-label" class="text-gray-700 font-thin text truncate text-nowrap text-form">Choose  file</span>
+
+                        </div>
+                    </div>
+                    
+        
+                </div>
+             
+                <div class="flex items-start justify-center flex-col space-x-2 mt-16">
+                    <div class="flex items-center mb-6">
+                    <input type="checkbox" id="terms" class="md:w-5 md:h-5 w-3 h-3 border-gray-400 rounded-md focus:ring-blue-600   ">
+                    <div class="flex flex-col">
+                    <label for="terms" class="text-gray-400 mx-2 text-form ">Agree terms and conditions</label>
+                    <p class="error-text text-red-500 sm:text-xs   text-[7px] transition-all duration-150 px-1"></p>
+                   </div>
+                     </div>
+                    <button class="lg:w-2/4  w-11/12 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 font-thin text-form">
+                        Submit Information
+                    </button>
+                </div>
+    
+            </form>
+        </div>
+  </div>
+  <div class="container mx-auto max-w-screen-2xl flex items-center justify-center w-screen lg:h-[45vh] lg:mt-16 mt-10 ">
+    <div class="lg:w-4/5 w-full h-4/5 p-6 bg-white flex justify-center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.6506959204276!2d72.93032137563829!3d26.175503177094328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418c261937c551%3A0x65b7b9d2944ffeb4!2sCapsitech!5e0!3m2!1sen!2sin!4v1738424649162!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-11/12 h-full"></iframe>
+    </div>
+  </div>
+  <section id="support" class="container mx-auto max-w-screen-2xl  px-4 sm:px-6 lg:px-8 mt-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-[clamp(24px,7vw,48px)] font-medium text-center mb-4">
+        Do you have any question
+      </h2>
+      <p class="font-thin lg:text2 text-xs lg:mb-20 mb-10 px-6">
+        Our support team ready to help you, please contact with them
+      </p>
+
+      <div class="space-y-6 px-4 accordiongroup">
+        <div>
+          <details
+            class=" border-b border-(--border-btm-faq) pb-4 mb-4 group accordion " >
+            <summary
+              class="flex items-center justify-between cursor-pointer text-lg font-medium">
+              
+              <h3
+                class="lg:text-lg  text2 font-medium mb-2 flex items-center text-start group-open:text-(--color-alternate-02)">
+                
+                <img
+                  src="./public/plus.png"
+                  alt="bullet01"
+                  class="w-7 h-7 mr-3 icon text" />
+                How to contact with riders emergency?
+              </h3>
+            </label>
+            </summary>
+            <p class="text-start lg:px-5 px-10 font-thin text1 lg:leading-8 ">
+              Get your blood tests delivered at the home collect a sample
+              from management news. Get your blood tests delivered at the
+              home collect a sample from management news. Get your blood
+              tests delivered at the home collect a sample from management
+              news. Get your blood tests delivered at the home.
+            </p>
+          </details>
+        </div>
+
+        <div>
+          <details
+            class="group border-b border-(--border-btm-faq) pb-4 mb-4 accordion">
+            <summary
+              class="flex items-center justify-between cursor-pointer text-lg font-medium">
+              <h3
+                class=" lg:text-lg  text2 font-medium mb-2 flex items-center text-start group-open:text-(--color-alternate-02)">
+                <img
+                  src="./public/plus.png"
+                  alt="bullet01"
+                  class="w-7 h-7 mr-3 icon " />
+                App installation failed, how to update system information?
+              </h3>
+            </summary>
+            <p class="text-start lg:px-5 px-10 font-thin text1 lg:leading-8 ">
+              Get your blood tests delivered at the home collect a sample
+              from management news. Get your blood tests delivered at the
+              home collect a sample from management news. Get your blood
+              tests delivered at the home collect a sample from management
+              news. Get your blood tests delivered at the home.
+            </p>
+          </details>
+        </div>
+
+        <div>
+          <details
+            class="group border-b border-(--border-btm-faq) pb-4 mb-4 accordion">
+            <summary
+              class="flex items-center justify-between cursor-pointer text-lg font-medium">
+              <h3
+                class="lg:text-lg text2 font-medium mb-2 flex items-center text-start group-open:text-(--color-alternate-02)">
+                <img
+                  src="./public/plus.png"
+                  alt="bullet01"
+                  class="w-7 h-7 mr-3 icon" />
+                Website reponse taking time, how to improve?
+              </h3>
+            </summary>
+            <p class="text-start lg:px-5 px-10 font-thin text1 lg:leading-8 ">
+              Get your blood tests delivered at the home collect a sample
+              from management news. Get your blood tests delivered at the
+              home collect a sample from management news. Get your blood
+              tests delivered at the home collect a sample from management
+              news. Get your blood tests delivered at the home.
+            </p>
+          </details>
+        </div>
+
+        <div>
+          <details
+            class="group border-b border-(--border-btm-faq) pb-4 mb-4 accordion">
+            <summary
+              class="flex items-center justify-between cursor-pointer text-lg font-medium">
+              <h3
+                class="text2 lg:text-lg font-medium mb-2 flex items-center text-start group-open:text-(--color-alternate-02)">
+                <img
+                  src="./public/plus.png"
+                  alt="bullet01"
+                  class="w-7 h-7 mr-3 text icon " />
+                New update fixed all bug and issues
+              </h3>
+            </summary>
+            <p class="text-start lg:px-5 px-10 font-thin text1 lg:leading-8 ">
+              Get your blood tests delivered at the home collect a sample
+              from management news. Get your blood tests delivered at the
+              home collect a sample from management news. Get your blood
+              tests delivered at the home collect a sample from management
+              news. Get your blood tests delivered at the home.
+            </p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container mx-auto max-w-screen-2xl flex justify-center items-center w-screen lg:mt-16">
+    <div class="w-4/5  ">
+     
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="heading text-gray-900 ">
+                Subscribe to Our Newsletter <br> for Design Insights
+            </h2>
+            <p class="text-gray-600 mt-4 lg:whitespace-pre  font-medium  text2">
+Be the first to discover trends, inspirations, and special offers as
+ we bring the world of design directly to your inbox.
+            </p>
+
+            <!-- Email Input Box -->
+            <div class=" flex items-center justify-center mt-16 ">
+                <div class="relative lg:w-4/5 w-full max-w-xl flex bg-white drop-shadow-lg rounded-full shadow-gray-400 justify-center">
+                    <span class="absolute inset-y-0 left-4 flex items-center text-gray-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                          </svg>
+                    </span>
+                    <input type="email" placeholder="Enter your email address"
+                        class="w-full pl-12 pr-4 py-3 text-gray-800 shadow-lg focus:outline-none truncate text2">
+                    <button class="bg-blue-600 text-white px-6 py-3 text2 font-medium hover:bg-blue-700">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div id="loadingOverlay" class="container mx-auto hidden max-w-screen-2xl fixed inset-0 z-50 bg-gray-900 bg-opacity-75 flex items-center justify-center">
+  <div class="spinner w-16 h-16 border-4 border-t-4 border-white border-t-transparent rounded-full"></div>
+  </div>
+  <footer class="container mx-auto max-w-screen-2xl flex justify-center items-center  items-start bg-[#09043C] min-[300px]:mt-16">
+  <div class=" w-full  md:p-10 p-4">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 pt-6">
+      <div>
+        <h4 class="font-semibold mb-4 text-white text-xl">Product</h4>
+        <ul class="space-y-2 text-md font-thin text-white"> 
+          <li><a href="#" class="hover:underline text2">Online whiteboard</a></li>
+          <li><a href="#" class="hover:underline text2">Apps & Integrations</a></li>
+          <li><a href="#" class="hover:underline text2">Templates</a></li>
+          <li><a href="#" class="hover:underline text2">Miroverse</a></li>
+          <li><a href="#" class="hover:underline text2">Security & Compliance</a></li>
+          <li><a href="#" class="hover:underline text2">Accessibility</a></li>
+
+          <li><a href="#" class="hover:underline text2">Changelog</a></li>
+          <li><a href="#" class="underline underline-offset-4 text2">View demo&rarr;</a></li>
+
+
+
+        </ul>
+      </div>
+      <div class="text-white">
+        <h4 class="font-semibold mb-4 text-white text-xl">Solutions</h4>
+        <ul class="space-y-2 text-md font-thin text-white">
+          <li><a href="#" class="hover:underline text2">Meetings and Workshops</a></li>
+          <li><a href="#" class="hover:underline text2">Agile Workflows</a></li>
+          <li><a href="#" class="hover:underline text2">Research & Design</a></li>
+          <li><a href="#" class="hover:underline text2">Diagramming</a></li>
+          <li><a href="#" class="hover:underline text2">Strategy & Planning</a></li>
+          <li><a href="#" class="hover:underline text2">Mind Map</a></li>
+          <li><a href="#" class="hover:underline text2">Concept Map</a></li>
+          <li><a href="#" class="hover:underline text2">Online Sticky Notes</a></li>
+          <li><a href="#" class="hover:underline text2">Flowchart</a></li>
+          <li><a href="#" class="hover:underline text2">Wirefarming</a></li>
+
+        </ul>
+      </div>
+      <div class="text-white">
+        <h4 class="font-semibold mb-4 text-white text-xl">Resources</h4>
+        <ul class="space-y-2 text-md font-thin text-white">
+          <li><a href="#" class="hover:underline text2">Miro Academy</a></li>
+          <li><a href="#" class="hover:underline text2">Help Center</a></li>
+          <li><a href="#" class="hover:underline text2">Blog</a></li>
+          <li><a href="#" class="hover:underline text2">Status</a></li>
+          <li><a href="#" class="hover:underline text2">Miro Community</a></li>
+          <li><a href="#" class="hover:underline text2">Miro Professional Network</a></li>
+
+          <li><a href="#" class="hover:underline text2">Miro Experts Directory</a></li>
+          <li><a href="#" class="hover:underline text2">Miro Events</a></li>
+
+        </ul>
+      </div>
+      <div class="text-white">
+        <h4 class="font-semibold mb-4 text-white text-xl">Company</h4>
+        <ul class="space-y-2 text-md font-thin text-white">
+          <li><a href="#" class="hover:underline text2">About Us</a></li>
+          <li><a href="#" class="hover:underline text2">Careers</a></li>
+          <li><a href="#" class="hover:underline text2">Miro in the News</a></li>
+          <li><a href="#" class="hover:underline text2">Customer Stories</a></li>
+        </ul>
+      </div>
+      <div class="text-white">
+        <h4 class="font-semibold mb-4 text-white text-xl">Plans and Pricing</h4>
+        <ul class="space-y-2 text-md font-thin text-white">
+          <li><a href="#" class="hover:underline text2">Pricing</a></li>
+          <li><a href="#" class="hover:underline text2">Business</a></li>
+          <li><a href="#" class="hover:underline text2">Enterprise</a></li>
+          <li><a href="#" class="hover:underline text2">Consultants</a></li>
+
+          <li><a href="#" class="hover:underline text2">Education</a></li>
+          <li><a href="#" class="hover:underline text2">Startups</a></li>
+          <li><a href="#" class="hover:underline text2">NPOS</a></li>
+
+          <li><a href="/Contact.html" class="underline text2 underline-offset-4">Contact Sales&rarr;</a></li>
+
+
+        </ul>
+      </div>
+    </div>
+    <div class="flex flex-col lg:flex-row justify-between items-center mt-10 border-t border-gray-700 pt-6 space-y-4   ">
+      <div class="logocontainer flex justify-center items-center lg:flex-row min-[300px]:flex-col  lg:w-3/5 w-full space-x-6 ">
+          <div class="flex justify-center items-center space-x-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-twitter" viewBox="0 0 16 16">
+              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-youtube" viewBox="0 0 16 16">
+              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+            </svg>
+            <div class="flex items-center justify-center space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="white" viewBox="0 0 16 16">
+              <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
+          </svg><span class="text-white heading1">EN</span>
+        </div>
+          </div>
+            <div class="flex items-center justify-center space-x-4 mt-4 lg:mt-0 text-white">
+              <p class="text2">&copy; 2022 Miro</p>
+             
+                <a href="#" class="hover:underline text2 font-normal">Privacy Policy</a>
+                <a href="#" class="hover:underline text2">Terms of Service</a>
+                <a href="#" class="hover:underline text2">Manage Cookies</a>
+              
+          </div>
+      </div>
+      <div class="flex items-center lg:justify-end min-[300px]:justify-center lg:flex-row  lg:w-1/3 w-3/5  ">
+         
+             <img src="./public/footer.png" class="h-full w-full object-scale-down" alt="">
+          
+          
+          
+      </div>
+    
+    </div>
+  </div>
+  </footer>
+
+</body>
+<script src="Contact.js"></script>
+
+
+</html>
