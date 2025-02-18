@@ -1,7 +1,7 @@
 # Responsive Web Project
 
 ![Project Banner](./public/desktop.png)
-(./public/mobile.png)
+
 
 ## Overview
 
