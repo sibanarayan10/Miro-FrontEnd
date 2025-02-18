@@ -1,7 +1,7 @@
 # Responsive Web Project
 
-![Project Banner](./public/Screenshot 2025-02-18 at 1.21.07 PM.png)
-(./public/Screenshot 2025-02-18 at 1.22.09 PM.png)
+![Project Banner](./public/desktop.png)
+(./public/mobile.png)
 
 ## Overview
 
