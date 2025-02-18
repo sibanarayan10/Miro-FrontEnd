@@ -54,5 +54,5 @@ The project includes:
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/responsive-web-project.git
-   cd responsive-web-project
+   git clone https://github.com/sibanarayan10/Miro-FrontEnd.git
+   cd Miro-FrontEndt
